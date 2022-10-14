@@ -77,11 +77,18 @@ else
     echo "Ruby already installed!"
 fi
 
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
+# Install some sec tools.
 brew install nmap
+brew install nikto
+brew install caskroom/cask/brew-caskbrew cask install owasp-zap
+brew install recon-ng
+brew install theharvester
+
 
 # Install other useful binaries.
 brew install speedtest_cli
+brew install mtr
+brew install tcptraceroute
 
 # Core casks
 brew cask install --appdir="/Applications" alfred
