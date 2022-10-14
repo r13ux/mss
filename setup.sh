@@ -48,7 +48,7 @@ brew upgrade
 
 # Install iTerm2
 echo "Installing iTerm2..."
-brew cask install iterm2
+brew install --cask iterm2
 
 # Update the Terminal
 # Install oh-my-zsh
@@ -67,15 +67,7 @@ git clone https://github.com/powerline/fonts.git
 cd fonts || exit
 sh -c ./install.sh
 
-# Install ruby
-if test ! "$(which ruby)"; then
-    echo "Installing Ruby..."
-    brew install ruby
-    echo "Adding the brew ruby path to shell config..."
-    echo 'export PATH='"/usr/local/opt/ruby/bin:$PATH" >>~/.bash_profile
-else
-    echo "Ruby already installed!"
-fi
+
 
 # Install some sec tools.
 brew install nmap
@@ -91,17 +83,17 @@ brew install mtr
 brew install tcptraceroute
 
 # Core casks
-brew cask install --appdir="/Applications" alfred
+brew install --cask alfred
 
 # Development tool casks
-brew cask install --appdir="/Applications" vscodium
+brew install --cask vscodium
 
 # Misc casks
-brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" 1password
-brew cask install --appdir="/Applications" wireshark
-brew cask install --appdir="/Applications" discord
+brew install --cask firefox
+brew install --cask slack
+brew install --cask 1password
+brew install --cask wireshark
+brew install --cask discord
 
 
 # Remove outdated versions from the cellar.
