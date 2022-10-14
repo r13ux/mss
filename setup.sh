@@ -101,6 +101,7 @@ brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" 1password
 brew cask install --appdir="/Applications" wireshark
+brew cask install --appdir="/Applications" discord
 
 
 # Remove outdated versions from the cellar.
