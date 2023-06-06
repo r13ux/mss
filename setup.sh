@@ -95,7 +95,7 @@ brew install --cask 1password
 brew install --cask wireshark
 brew install --cask discord
 brew install --cask rectangle
-brew install --cask vmware-fusion
+
 
 
 # Remove outdated versions from the cellar.
