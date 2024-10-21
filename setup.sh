@@ -33,6 +33,9 @@ if test ! "$(which brew)"; then
 else
     echo "Homebrew already installed!"
 fi
+ echo >> /Users/ddownen/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/ddownen/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Install XCode Command Line Tools
 echo 'Checking to see if XCode Command Line Tools are installed...'
